@@ -12,12 +12,6 @@
 ###################### SESIÓN 7 #######################
 ################################################################################
 ## EJEMPLO 1: CONEXIÓN ENTRE RSTUDIO Y GITHUB
-https://github.com/DanielT-M
-#este es
-#no se volvera a ver nuevamente
-#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 #se podría editar 
-
-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
 
 
 ################################################################################
