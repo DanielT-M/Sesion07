@@ -26,6 +26,8 @@ head(DataDB)
 unique(DataDB$Language) #vemos que esta  "Spanish"
 
 per.spanish <-  DataDB %>% filter(Language == "Spanish")
+
+class(per.spanish)
 head(per.spanish)
 dim(per.spanish)
 
@@ -34,3 +36,11 @@ ggplot(per.spanish, aes(x = Percentage, y = CountryCode, colour = IsOfficial)) +
   theme_grey() + ggtitle("Personas que hablan español por país")+
   xlab("Cantidad de personas (%)") +
   ylab("País")
+
+ggplot(per.spanish, aes(x = Percentage, y = CountryCode, colour = IsOfficial)) + 
+  geom_point() + 
+  theme_grey() + ggtitle("Personas que hablan español por país")+
+  xlab("Cantidad de personas (%)") +
+  ylab("País")
+
+dbDisconnect(MyDataBase)
